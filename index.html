@@ -4,150 +4,375 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Web Design Mastery | Travel.co</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav__logo"><a href="#">Travel.co</a></div>
-      <ul class="nav__links">
-        <li class="link">Home</li>
-        <li class="link">Blog</li>
-        <li class="link">Offers</li>
-        <li class="link">Services</li>
-        <li class="link">Contacts</li>
-      </ul>
+    <nav id="desktop-nav">
+      <div class="logo">Jasti Prashanthi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <header>
-      <div class="section__container">
-        <div class="header__content">
-          <h1>Travel</h1>
-          <p>
-            Embark on a journey of a lifetime and explore the world's most
-            breathtaking destinations with our expert travel advice. From exotic
-            beaches to cultural wonders, we've got you covered with our
-            comprehensive travel guides and insider tips.
-          </p>
-          <button>Read more</button>
+    <nav id="hamburger-nav">
+      <div class="logo">Jasti Prashanthi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
-    </header>
-
-    <section class="journey__container">
-      <div class="section__container">
-        <h2 class="section__title">Start Your Journey</h2>
-        <p class="section__subtitle">The most searched countries in March</p>
-        <div class="journey__grid">
-          <div class="country__card">
-            <img src="C:\Users\Pessy\Desktop\country-1.jpg.jpg" alt="country" />
-            <div class="country__name">
-              <i class="ri-map-pin-2-fill"></i>
-              <span>Santorini, Greece</span>
-            </div>
-          </div>
-          <div class="country__card">
-            <img src="C:\Users\Pessy\Desktop\country-2.jpg" alt="country" />
-            <div class="country__name">
-              <i class="ri-map-pin-2-fill"></i>
-              <span>Vernazza, Italy</span>
-            </div>
-          </div>
-          <div class="country__card">
-            <img src="C:\Users\Pessy\Desktop\country-3.jpg" alt="country" />
-            <div class="country__name">
-              <i class="ri-map-pin-2-fill"></i>
-              <span>San Francisco</span>
-            </div>
-          </div>
-          <div class="country__card">
-            <img src="C:\Users\Pessy\Desktop\country-4.jpg" alt="country" />
-            <div class="country__name">
-              <i class="ri-map-pin-2-fill"></i>
-              <span>navagio, Greece</span>
-            </div>
-          </div>
-          <div class="country__card">
-            <img src="C:\Users\Pessy\Desktop\country-5.jpg" alt="country" />
-            <div class="country__name">
-              <i class="ri-map-pin-2-fill"></i>
-              <span>Ao Nang, Thailand</span>
-            </div>
-          </div>
-          <div class="country__card">
-            <img src="C:\Users\Pessy\Desktop\country-6.jpg" alt="country" />
-            <div class="country__name">
-              <i class="ri-map-pin-2-fill"></i>
-              <span>Phi Phi Island, Thailand</span>
-            </div>
-          </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="profile-pic.jpg" alt="Jasti Prashanthi profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jasti Prashanthi</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('Jasti Prashanthi_resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
         </div>
       </div>
     </section>
-
-    <section class="banner__container">
-      <div class="section__container">
-        <div class="banner__content">
-          <h2>Discount 10-30% Off</h2>
-          <p>
-            Travel the world on a budget with our unbeatable discounted travel
-            deals. Whether you're looking for a last-minute escape or planning
-            ahead, we've got you covered with incredible discounts on flights,
-            hotels, and packages. Don't wait, book now and experience the
-            adventure of a lifetime without breaking the bank.
-          </p>
-          <button>See Tours</button>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="aboutme-pic.png.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-      </div>
-    </section>
-
-    <section class="display__container">
-      <div class="section__container">
-        <h2 class="section__title">Why Choose Us</h2>
-        <p class="section__subtitle">
-          The gladdest moment in human life, is a departure into unknown lands.
-        </p>
-        <div class="display__grid">
-          <div class="display__card grid-1">
-            <img src="C:\Users\Pessy\Desktop\grid-1.jpg" alt="grid" />
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BE Bachelors Degree</p>
+            </div>
           </div>
-          <div class="display__card">
-            <i class="ri-earth-line"></i>
-            <h4>Passionate Travel</h4>
-            <p>Fuel your passion for adventure and discover new horizons</p>
-          </div>
-          <div class="display__card">
-            <img src="C:\Users\Pessy\Desktop\grid-2.jpg" alt="grid" />
-          </div>
-          <div class="display__card">
-            <img src="C:\Users\Pessy\Desktop\grid-3.jpg" alt="grid" />
-          </div>
-          <div class="display__card">
-            <i class="ri-road-map-line"></i>
-            <h4>Beautiful Places</h4>
-            <p>Uncover the world's most breathtakingly beautiful places</p>
+          <div class="text-container">
+            <p>
+              Enthusiastic and committed to learning new skills and enhancing my programming skills. 
+              Good listener and communicator and passionate about constant improvement.
+            </p>
           </div>
         </div>
       </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
-
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
     <footer>
-      <div class="section__container">
-        <h4>Travel.co</h4>
-        <div class="social__icons">
-          <span><i class="ri-facebook-fill"></i></span>
-          <span><i class="ri-twitter-fill"></i></span>
-          <span><i class="ri-instagram-line"></i></span>
-          <span><i class="ri-linkedin-fill"></i></span>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <p>
-          Travel makes one modest. You see what a tiny place you occupy in the
-          world.
-        </p>
-      </div>
+      </nav>
+      <p>Copyright &#169; 2023 Jasti Prashanthi. All Rights Reserved.</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
